@@ -2,17 +2,6 @@
 # Lab 5
 
 
----
-
-## Table of Contents
-1. [ArrayList Operations](#arraylist-operations)
-2. [List Operations](#list-operations)
-3. [Stack Operations](#stack-operations)
-4. [Queue Operations](#queue-operations)
-5. [Dictionary Operations](#dictionary-operations)
-6. [Hashtable Operations](#hashtable-operations)
-
----
 
 ## ArrayList Operations
 ### Steps:
@@ -28,16 +17,16 @@ ArrayList studentNames = new ArrayList();
 // Add students
 studentNames.Add("John");
 studentNames.Add("Alice");
-Console.WriteLine("After Adding: " + string.Join(", ", studentNames));
+Console.WriteLine("After Adding: " + string.Join(", ", studentNames.ToArray()));
 
 // Remove a student by index
 studentNames.RemoveAt(1);
-Console.WriteLine("After Removing: " + string.Join(", ", studentNames));
+Console.WriteLine("After Removing: " + string.Join(", ", studentNames.ToArray()));
 
 // Remove range
 studentNames.AddRange(new string[] { "Alice", "Bob", "Charlie" });
 studentNames.RemoveRange(0, 2);
-Console.WriteLine("After Removing Range: " + string.Join(", ", studentNames));
+Console.WriteLine("After Removing Range: " + string.Join(", ", studentNames.ToArray()));
 
 // Clear all students
 studentNames.Clear();
@@ -60,16 +49,16 @@ List<string> studentNames = new List<string>();
 // Add students
 studentNames.Add("John");
 studentNames.Add("Alice");
-Console.WriteLine("After Adding: " + string.Join(", ", studentNames));
+Console.WriteLine("After Adding: " + string.Join(", ", studentNames.ToArray()));
 
 // Remove a student by index
 studentNames.RemoveAt(1);
-Console.WriteLine("After Removing: " + string.Join(", ", studentNames));
+Console.WriteLine("After Removing: " + string.Join(", ", studentNames.ToArray()));
 
 // Remove range
 studentNames.AddRange(new List<string> { "Alice", "Bob", "Charlie" });
 studentNames.RemoveRange(0, 2);
-Console.WriteLine("After Removing Range: " + string.Join(", ", studentNames));
+Console.WriteLine("After Removing Range: " + string.Join(", ", studentNames.ToArray()));
 
 // Clear all students
 studentNames.Clear();
